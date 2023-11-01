@@ -2,7 +2,7 @@
 
 odt_to_pdf_arglist("Orbiter" arglist src out)
 add_custom_command(
-	OUTPUT ${out}
+	 ${out}
 	COMMAND ${ODT_TO_PDF_COMPILER} ${arglist}
 	DEPENDS ${src}
 	JOB_POOL soffice
